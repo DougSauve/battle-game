@@ -1,0 +1,56 @@
+Goals:
+Total Encapsulation (no global variables)
+Abstraction
+Inheritance (use prototypal inheritance )
+
+
+k. So the plan to begin with...
+vision: Game populates squares to begin with, in a grid, each one a terrain type (forest, swamp, water, meadow, mountain).
+These are done dynamically. Also need Teammate and Enemy constructors - as there may be more than one enemy.
+Terrain is generated randomly but must be entirely accessible from gameplay as some chars will be able to change it. Will need a db or chars, enemies, and their abilities. Each terrain has effects as well - terrain objects would be handy.
+
+Also, a 'make children stay within it' div would be wonderful.
+Make this scalable too, to a certain degree! :) Sensors for general screen size - it doesn't need to be perfectly scalable on a continuum as long as it has some different size options for different screen sizes.
+
+Make every object a prototype! Program to an interface, not an implementation.
+
+Size: let's go 15x15 to start with. Each one can be 50px or so square. Set it up based on screen sizes - max height for landscape, max width for portrait. Start it for mobile.
+
+spreadout layout: based on screen size
+layout positions: based on orientation.
+
+Generate all css dynamically. I think.
+
+Objects I'll need:
+
+GameSpace (total area - Area and Dash)
+
+Dash (area where message come up and menu info is displayed)
+
+Area (visible gameplay area)
+
+Hex
+  ForestHex
+  SwampHex
+  MeadowHex
+  WaterHex
+  MountainHex
+
+Pawn
+  Teammate (good guy)
+  Enemy (bad guy)
+
+
+
+DB info I'll need:
+
+Terrain Characteristics
+Creature Characteristics
+Attack Characteristics
+Pawn Characteristics
+  Attack
+  HP
+  Defence
+  Speed
+  Agility
+  etc.
