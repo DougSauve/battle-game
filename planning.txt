@@ -5,7 +5,8 @@ Inheritance (use prototypal inheritance )
 
 
 k. So the plan to begin with...
-vision: Game populates squares to begin with, in a grid, each one a terrain type (forest, swamp, water, meadow, mountain).
+vision: Game populates squares to begin with, in a grid, each one a terrain type (forest, swamp, water, meadow, mountain). X.
+
 These are done dynamically. Also need Teammate and Enemy constructors - as there may be more than one enemy.
 Terrain is generated randomly but must be entirely accessible from gameplay as some chars will be able to change it. Will need a db or chars, enemies, and their abilities. Each terrain has effects as well - terrain objects would be handy.
 
